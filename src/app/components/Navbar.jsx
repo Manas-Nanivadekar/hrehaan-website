@@ -11,20 +11,24 @@ const navLinks = [
     path: "#about"
   },
   {
-    title: "Projects",
-    path: "#projects"
+    title: "Writing & Research",
+    path: "#writing-research"
   },
   {
-    title: "Work",
-    path: "#work"
+    title: "Resources",
+    path: "#resources"
   },
   {
-    title: "Talks",
-    path: "#talks"
+    title: "Videos",
+    path: "#videos"
+  },
+  {
+    title: "Blog",
+    path: "#blog"
   },
   {
     title: "Resume",
-    path: "/resume.pdf"
+    path: "#resume"
   }
 ];
 
@@ -38,8 +42,8 @@ const Navbar = () => {
     >
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-10 py-2">
         <Link href={"/"} className="text-4xl md:text-4xl font-bold">
-          <span className="text-red-600">-</span>
-          <span className="text-white">mn</span>
+          <span className="text-tertiaryColor">-</span>
+          <span className="text-white">h</span>
         </Link>
 
         <div className="mobile-menu block md:hidden">

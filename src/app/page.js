@@ -1,10 +1,12 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import WritingResearch from "./components/WritingResearch";
+import IBResources from "./components/IBResources";
+import Videos from "./components/Videos";
+import Blog from "./components/Blog";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
-import Work from "./components/Work";
-import Talks from "./components/Talks";
 import Socials from "./components/Socials";
 import './globals.css';
 
@@ -16,9 +18,11 @@ export default function Home() {
        <Hero /> 
        <Socials />
        <About />
-       <Projects />
-       <Work />
-       <Talks />
+       <WritingResearch />
+       <IBResources />
+       <Videos />
+       <Blog />
+       <Resume />
        <Footer />
        </div>
     </main>

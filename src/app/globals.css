@@ -40,15 +40,27 @@ body {
 }
 
 .primaryColor {
-  color: #ffff;
+  color: #000000;
 }
 
 .secondaryColor {
-  background-color: #111111;
+  color: #ffffff;
+}
+
+.tertiaryColor {
+  color: #0066ff;
+}
+
+.secondaryBg {
+  background-color: #ffffff;
+}
+
+.tertiaryBg {
+  background-color: #0066ff;
 }
 
 .accentColor {
-  color: #eb0028;
+  color: #0066ff;
 }
 
 .poppins-light {

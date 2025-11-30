@@ -1,107 +1,83 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import {TypeAnimation} from "react-type-animation";
 import {motion} from "framer-motion";
 import Link from "next/link";
 
 const Hero = () => {
   return (
     <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <div className="flex flex-col items-center text-center">
         <motion.div
-          initial={{opacity: 0, scale: 0.5}}
-          animate={{opacity: 1, scale: 1}}
+          initial={{opacity: 0, y: 20}}
+          animate={{opacity: 1, y: 0}}
           transition={{duration: 0.5}}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+          className="max-w-4xl"
         >
-          <h1 className="text-white poppins-bold mb-4 text-xl sm:text-3xl lg:text-6xl lg:leading-normal font-extrabold">
-            <span className="bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m
-            </span>
-            <br></br>
-            {/* <TypeAnimation
-              sequence={[
-                "Manas Nanivadekar.",
-                2000,
-                "Cloud Developer.",
-                1000,
-                "Google DSC Lead.",
-                1000,
-                "Postman Leader.",
-                1000,
-                "Full Stack Developer.",
-                1000
-              ]}
-              wrapper="span"
-              // speed={50}
-              // repeat={Infinity}
-              className="accentColor"
-            /> */}
-            <span className="accentColor">Manas Nanivadekar</span>.
+          <h1 className="text-white poppins-bold mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
+            <span className="text-white">Hrehaan</span>
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Passionate developer crafting solutions for real-world challenges.
+          <p className="text-[#ADB7BE] text-lg sm:text-xl mb-6 lg:text-2xl poppins-medium">
+            Student | Researcher | Creator
           </p>
-          <div>
-            {/* <Link
-              href="/#contact"
-              className="px-6 inline-block py-10 w-full sm:w-fit mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover: text-white"
-            >
-              Download CV
-            </Link> */}
+          
+          {/* Short About Me Summary */}
+          <p className="text-white text-base sm:text-lg mb-8 lg:text-xl max-w-2xl mx-auto">
+            IB Diploma student passionate about learning, research, and creating content that makes complex concepts accessible.
+          </p>
+
+          {/* Quick Highlights */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm sm:text-base">
+            <span className="text-white border border-white/20 px-4 py-2 rounded-full">
+              IB Diploma Student
+            </span>
+            <span className="text-white border border-white/20 px-4 py-2 rounded-full">
+              Author of Helping Hands, Loving Hearts
+            </span>
+            <span className="text-white border border-white/20 px-4 py-2 rounded-full">
+              Founder of StudySphere
+            </span>
+          </div>
+
+          {/* CTA Button */}
+          <div className="mb-12">
             <Link
-              href="mailto:contact@manasnanivadekar.me"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              href="#writing-research"
+              className="px-8 py-3 inline-block rounded-lg bg-tertiaryColor text-white hover:opacity-90 transition-opacity poppins-medium text-lg"
             >
-              <span className="block bg-[#EB0028] rounded-full px-5 py-2">
-                Get in Touch
-              </span>
+              Explore My Work
             </Link>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{opacity: 0, scale: 0.5}}
-          animate={{opacity: 1, scale: 1}}
-          transition={{duration: 0.5}}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
-        >
-          <div className="flex flex-row gap-3 p-2 md:hidden">
-            <Link href="https://x.com/nanivadekar_m">
-              <Image
-                className="h-8 w-8 hover:scale-110 cursor-pointer"
-                src="/X.png"
-                alt=""
-                height={32}
-                width={32}
-              />
+
+          {/* Visual Links */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <Link
+              href="#writing-research"
+              className="flex flex-col items-center p-6 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
+            >
+              <div className="text-4xl mb-2">📚</div>
+              <span className="text-white group-hover:text-tertiaryColor transition-colors">Books</span>
             </Link>
-            <Link href="https://www.linkedin.com/in/manas-nanivadekar/">
-              <Image
-                className="h-8 w-8 hover:scale-110 cursor-pointer"
-                src="/in.png"
-                alt=""
-                height={32}
-                width={32}
-              />
+            <Link
+              href="#writing-research"
+              className="flex flex-col items-center p-6 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
+            >
+              <div className="text-4xl mb-2">🔬</div>
+              <span className="text-white group-hover:text-tertiaryColor transition-colors">Research</span>
             </Link>
-            <Link href="https://github.com/Manas-Nanivadekar/">
-              <Image
-                className="h-8 w-8 hover:scale-110 cursor-pointer"
-                src="/Github.png"
-                alt=""
-                height={32}
-                width={32}
-              />
+            <Link
+              href="#videos"
+              className="flex flex-col items-center p-6 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
+            >
+              <div className="text-4xl mb-2">📺</div>
+              <span className="text-white group-hover:text-tertiaryColor transition-colors">YouTube</span>
             </Link>
-            <Link href="mailto:contact@manasnanivadekar.me">
-              <Image
-                className="h-8 w-8 hover:scale-110 cursor-pointer"
-                src="/Google.png"
-                alt=""
-                height={32}
-                width={32}
-              />
+            <Link
+              href="#blog"
+              className="flex flex-col items-center p-6 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
+            >
+              <div className="text-4xl mb-2">✍️</div>
+              <span className="text-white group-hover:text-tertiaryColor transition-colors">Blog</span>
             </Link>
           </div>
         </motion.div>

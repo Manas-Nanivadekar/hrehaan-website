@@ -5,8 +5,8 @@ import GoogleAnalytics from "./components/GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Manas Nanivadekar",
-  description: "Portfolio of Manas Nanivadekar",
+  title: "Hrehaan",
+  description: "Student | Researcher | Creator - IB Diploma student, author, and founder of StudySphere",
 };
 
 export default function RootLayout({ children }) {
