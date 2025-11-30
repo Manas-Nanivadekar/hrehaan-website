@@ -121,9 +121,9 @@ const About = () => {
   };
 
   return (
-    <section className="text-white lg:mt-8" id="about">
-      <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <h2 className="text-5xl font-bold accentColor mt-4 mb-8 md:mb-12">
+    <section className="text-white mt-4 lg:mt-6" id="about">
+      <div className="py-6 px-4 xl:gap-16 sm:py-8 xl:px-16">
+        <h2 className="text-4xl md:text-5xl font-bold accentColor mb-6 md:mb-8">
           - about me
         </h2>
         

@@ -3,8 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {motion, useInView} from "framer-motion";
-import {useRef} from "react";
+import {motion} from "framer-motion";
 
 const booksData = [
   {
@@ -38,26 +37,23 @@ const cardVariants = {
 };
 
 const WritingResearch = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
-
   return (
-    <section className="text-white lg:mt-8" id="writing-research">
-      <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <h2 className="text-5xl font-bold accentColor mt-4 mb-8 md:mb-12">
+    <section className="text-white mt-4 lg:mt-6" id="writing-research">
+      <div className="py-6 px-4 xl:gap-16 sm:py-8 xl:px-16">
+        <h2 className="text-4xl md:text-5xl font-bold accentColor mb-6 md:mb-8">
           - writing & research
         </h2>
 
         {/* Books Section */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-white mb-6">Books</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" ref={ref}>
+        <div className="mb-10">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Books</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {booksData.map((book, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 initial="initial"
-                animate={isInView ? "animate" : "initial"}
+                animate="animate"
                 transition={{duration: 0.3, delay: index * 0.2}}
                 className="border border-white/20 rounded-lg overflow-hidden hover:border-tertiaryColor transition-colors"
               >
@@ -87,15 +83,15 @@ const WritingResearch = () => {
         </div>
 
         {/* Research Papers Section */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-white mb-6">Research Papers</h3>
-          <div className="space-y-6" ref={ref}>
+        <div className="mb-10">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Research Papers</h3>
+          <div className="space-y-6">
             {researchData.map((paper, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 initial="initial"
-                animate={isInView ? "animate" : "initial"}
+                animate="animate"
                 transition={{duration: 0.3, delay: index * 0.2}}
                 className="border border-white/20 rounded-lg p-6 hover:border-tertiaryColor transition-colors"
               >
@@ -131,13 +127,13 @@ const WritingResearch = () => {
         {/* Future Projects Section */}
         <div>
           <h3 className="text-3xl font-bold text-white mb-6">Coming Soon</h3>
-          <div className="grid md:grid-cols-2 gap-6" ref={ref}>
+          <div className="grid md:grid-cols-2 gap-6">
             {futureProjects.map((project, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 initial="initial"
-                animate={isInView ? "animate" : "initial"}
+                animate="animate"
                 transition={{duration: 0.3, delay: index * 0.2}}
                 className="border border-white/20 rounded-lg p-6 hover:border-tertiaryColor transition-colors opacity-60"
               >

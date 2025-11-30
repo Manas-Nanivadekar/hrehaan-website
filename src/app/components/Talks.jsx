@@ -1,8 +1,8 @@
 "use client";
-
-import React, {useRef} from "react";
+ 
+import React from "react";
 import TalksCard from "./TalksCard";
-import {motion, useInView} from "framer-motion";
+import {motion} from "framer-motion";
 
 const talksData = [
   {
@@ -37,9 +37,6 @@ const cardVariants = {
 };
 
 const Talks = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
-
   return (
     <section id="talks">
       <div className="mt-20">
@@ -47,7 +44,6 @@ const Talks = () => {
           - Talks
         </h2>
         <div
-          ref={ref}
           className="text-white flex flex-col md:flex-row justify-center items-center gap-1 md:gap-6 py-6"
         >
           {talksData.map((item, index) => (
@@ -55,7 +51,7 @@ const Talks = () => {
               key={index}
               variants={cardVariants}
               initial="initial"
-              animate={isInView ? "animate" : "initial"}
+              animate="animate"
               transition={{duration: 0.3, delay: index * 0.4}}
               className="mb-6"
             >

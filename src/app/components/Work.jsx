@@ -1,7 +1,7 @@
 "use client";
-import React, {useState, useEffect, useRef} from "react";
+import React from "react";
 import Card from "./Card";
-import {motion, useInView} from "framer-motion";
+import {motion} from "framer-motion";
 
 const workData = [
   {
@@ -48,22 +48,19 @@ const cardVariants = {
 };
 
 const Work = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
-
   return (
     <section className="lg:mt-8" id="work">
       <div className="min-h-screen">
         <h1 className="text-5xl font-bold accentColor mt-20 mb-4 md:mb-6">
           - work
         </h1>
-        <ul ref={ref}>
+        <ul>
           {workData.map((item, index) => (
             <motion.li
               key={index}
               variants={cardVariants}
               initial="initial"
-              animate={isInView ? "animate" : "initial"}
+              animate="animate"
               transition={{duration: 0.3, delay: index * 0.4}}
               className="mb-6"
             >

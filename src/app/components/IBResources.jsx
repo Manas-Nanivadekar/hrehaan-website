@@ -1,9 +1,8 @@
 "use client";
-
+ 
 import React, {useState} from "react";
 import Link from "next/link";
-import {motion, useInView} from "framer-motion";
-import {useRef} from "react";
+import {motion} from "framer-motion";
 
 const ibSubjects = [
   {
@@ -80,14 +79,12 @@ const cardVariants = {
 };
 
 const IBResources = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
   const [selectedSubject, setSelectedSubject] = useState(null);
 
   return (
-    <section className="text-white lg:mt-8" id="resources">
-      <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <h2 className="text-5xl font-bold accentColor mt-4 mb-8 md:mb-12">
+    <section className="text-white mt-4 lg:mt-6" id="resources">
+      <div className="py-6 px-4 xl:gap-16 sm:py-8 xl:px-16">
+        <h2 className="text-4xl md:text-5xl font-bold accentColor mb-6 md:mb-8">
           - ib & college resources
         </h2>
 
@@ -99,13 +96,13 @@ const IBResources = () => {
             Click on any subject to access topic-wise notes, YouTube videos, and additional resources.
           </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" ref={ref}>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {ibSubjects.map((subject, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 initial="initial"
-                animate={isInView ? "animate" : "initial"}
+                animate="animate"
                 transition={{duration: 0.3, delay: index * 0.1}}
                 className={`border rounded-lg p-6 text-center cursor-pointer hover:scale-105 transition-transform ${subject.color}`}
                 onClick={() => setSelectedSubject(subject.name)}
@@ -168,13 +165,13 @@ const IBResources = () => {
             Tips, guides, and resources to help you navigate the college admissions process.
           </p>
           
-          <div className="grid md:grid-cols-3 gap-6" ref={ref}>
+          <div className="grid md:grid-cols-3 gap-6">
             {collegeAdmissionsTips.map((tip, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 initial="initial"
-                animate={isInView ? "animate" : "initial"}
+                animate="animate"
                 transition={{duration: 0.3, delay: index * 0.2}}
                 className="border border-white/20 rounded-lg p-6 hover:border-tertiaryColor transition-colors"
               >
@@ -201,13 +198,13 @@ const IBResources = () => {
             Ready-to-use templates, planners, and downloadable resources to support your studies.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6" ref={ref}>
+          <div className="grid md:grid-cols-2 gap-6">
             {toolsAndDownloads.map((tool, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 initial="initial"
-                animate={isInView ? "animate" : "initial"}
+                animate="animate"
                 transition={{duration: 0.3, delay: index * 0.2}}
                 className="border border-white/20 rounded-lg p-6 hover:border-tertiaryColor transition-colors"
               >

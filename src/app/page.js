@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="poppins-regular flex min-h-screen flex-col">
       <Navbar />
-       <div className="container mt-24 mx-auto px-12 py-4">
+       <div className="container mt-20 mx-auto px-6 sm:px-12 py-2">
        <Hero /> 
        <Socials />
        <About />

@@ -3,8 +3,7 @@
 import React, {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {motion, useInView} from "framer-motion";
-import {useRef} from "react";
+import {motion} from "framer-motion";
 
 const videoCategories = ["All", "Physics", "Math", "Economics", "Psychology"];
 
@@ -51,8 +50,6 @@ const cardVariants = {
 
 const Videos = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
 
   const filteredVideos =
     selectedCategory === "All"
@@ -60,10 +57,10 @@ const Videos = () => {
       : videosData.filter(video => video.category === selectedCategory);
 
   return (
-    <section className="text-white lg:mt-8" id="videos">
-      <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section className="text-white mt-4 lg:mt-6" id="videos">
+      <div className="py-6 px-4 xl:gap-16 sm:py-8 xl:px-16">
         <div className="mb-8">
-          <h2 className="text-5xl font-bold accentColor mt-4 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold accentColor mb-4">
             - videos
           </h2>
           <p className="text-xl text-white/80 mb-2">
@@ -92,13 +89,13 @@ const Videos = () => {
         </div>
 
         {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" ref={ref}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredVideos.map((video, index) => (
             <motion.div
               key={video.id}
               variants={cardVariants}
               initial="initial"
-              animate={isInView ? "animate" : "initial"}
+              animate="animate"
               transition={{duration: 0.3, delay: index * 0.1}}
               className="border border-white/20 rounded-lg overflow-hidden hover:border-tertiaryColor transition-colors group"
             >
