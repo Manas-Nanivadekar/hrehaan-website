@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
 
           {/* Visual Links */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-2xl mx-auto mb-4">
             <Link
               href="#writing-research"
               className="flex flex-col items-center p-4 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
@@ -71,21 +71,12 @@ const Hero = () => {
               </span>
             </Link>
             <Link
-              href="#videos"
-              className="flex flex-col items-center p-4 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
-            >
-              <div className="text-3xl mb-1">📺</div>
-              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">
-                YouTube
-              </span>
-            </Link>
-            <Link
-              href="#blog"
+              href="#substack"
               className="flex flex-col items-center p-4 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
             >
               <div className="text-3xl mb-1">✍️</div>
               <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">
-                Blog
+                StudySphere
               </span>
             </Link>
           </div>

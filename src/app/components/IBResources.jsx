@@ -84,18 +84,18 @@ const IBResources = () => {
   return (
     <section className="text-white mt-4 lg:mt-6" id="resources">
       <div className="py-6 px-4 xl:gap-16 sm:py-8 xl:px-16">
-        <h2 className="text-4xl md:text-5xl font-bold accentColor mb-6 md:mb-8">
+        {/* <h2 className="text-4xl md:text-5xl font-bold accentColor mb-6 md:mb-8">
           - ib & college resources
-        </h2>
+        </h2> */}
 
         {/* IB Resources Section */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-3xl font-bold text-white mb-6">IB Resources</h3>
           <p className="text-white/80 mb-8 max-w-2xl">
             Comprehensive study materials, notes, and video resources organized by subject.
             Click on any subject to access topic-wise notes, YouTube videos, and additional resources.
           </p>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {ibSubjects.map((subject, index) => (
               <motion.div
@@ -156,15 +156,15 @@ const IBResources = () => {
               </div>
             </motion.div>
           )}
-        </div>
+        </div> */}
 
         {/* College Admissions Section */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-3xl font-bold text-white mb-6">College Admissions</h3>
           <p className="text-white/80 mb-8 max-w-2xl">
             Tips, guides, and resources to help you navigate the college admissions process.
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             {collegeAdmissionsTips.map((tip, index) => (
               <motion.div
@@ -189,15 +189,15 @@ const IBResources = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Tools & Downloads Section */}
-        <div>
+        {/* <div>
           <h3 className="text-3xl font-bold text-white mb-6">Tools & Downloads</h3>
           <p className="text-white/80 mb-8 max-w-2xl">
             Ready-to-use templates, planners, and downloadable resources to support your studies.
           </p>
-          
+
           <div className="grid md:grid-cols-2 gap-6">
             {toolsAndDownloads.map((tool, index) => (
               <motion.div
@@ -226,7 +226,7 @@ const IBResources = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

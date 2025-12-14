@@ -19,17 +19,13 @@ const navLinks = [
     path: "#resources"
   },
   {
-    title: "Videos",
-    path: "#videos"
-  },
-  {
-    title: "Blog",
-    path: "#blog"
-  },
-  {
-    title: "Resume",
-    path: "#resume"
+    title: "StudySphere",
+    path: "#substack"
   }
+  // {
+  //   title: "Resume",
+  //   path: "#resume"
+  // }
 ];
 
 const Navbar = () => {

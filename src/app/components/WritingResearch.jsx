@@ -137,7 +137,7 @@ const WritingResearch = () => {
         </div>
 
         {/* Future Projects Section */}
-        <div>
+        {/* <div>
           <h3 className="text-3xl font-bold text-white mb-6">Coming Soon</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {futureProjects.map((project, index) => (
@@ -161,7 +161,7 @@ const WritingResearch = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
