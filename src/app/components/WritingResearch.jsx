@@ -7,17 +7,19 @@ import {motion} from "framer-motion";
 
 const booksData = [
   {
-    title: "Helping Hands, Loving Hearts",
-    cover: "/book-cover-placeholder.jpg", // Replace with actual cover image
-    summary: "A heartfelt exploration of compassion and community service.",
-    amazonLink: "#" // Add actual Amazon link
+    title: "Happy Hearts",
+    cover: "/cover.jpg", // Uses image from the public folder via @public alias
+    summary: "How Grandparents and Grandchildren Build Memories That Last",
+    amazonLink:
+      "https://www.amazon.in/Happy-Hearts-Grandparents-Grandchildren-Memories-ebook/dp/B0FV2Z17RD" // Add actual Amazon link
   }
 ];
 
 const researchData = [
   {
     title: "Research Paper Title",
-    abstract: "Brief abstract of your research paper. This section will contain the main findings and contributions of your work.",
+    abstract:
+      "Brief abstract of your research paper. This section will contain the main findings and contributions of your work.",
     link: "#", // Link to paper/PDF
     pdfLink: "#" // Direct PDF link if available
   }
@@ -46,7 +48,9 @@ const WritingResearch = () => {
 
         {/* Books Section */}
         <div className="mb-10">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Books</h3>
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Books
+          </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {booksData.map((book, index) => (
               <motion.div
@@ -57,7 +61,7 @@ const WritingResearch = () => {
                 transition={{duration: 0.3, delay: index * 0.2}}
                 className="border border-white/20 rounded-lg overflow-hidden hover:border-tertiaryColor transition-colors"
               >
-                <div className="aspect-[2/3] relative bg-white/5">
+                <div className="aspect-[4/3] relative bg-white/5">
                   <Image
                     src={book.cover}
                     alt={book.title}
@@ -66,7 +70,9 @@ const WritingResearch = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h4 className="text-xl font-bold text-white mb-2">{book.title}</h4>
+                  <h4 className="text-xl font-bold text-white mb-2">
+                    {book.title}
+                  </h4>
                   <p className="text-white/80 mb-4 text-sm">{book.summary}</p>
                   <Link
                     href={book.amazonLink}
@@ -84,7 +90,9 @@ const WritingResearch = () => {
 
         {/* Research Papers Section */}
         <div className="mb-10">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Research Papers</h3>
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Research Papers
+          </h3>
           <div className="space-y-6">
             {researchData.map((paper, index) => (
               <motion.div
@@ -95,8 +103,12 @@ const WritingResearch = () => {
                 transition={{duration: 0.3, delay: index * 0.2}}
                 className="border border-white/20 rounded-lg p-6 hover:border-tertiaryColor transition-colors"
               >
-                <h4 className="text-2xl font-bold text-white mb-3">{paper.title}</h4>
-                <p className="text-white/80 mb-4 leading-relaxed">{paper.abstract}</p>
+                <h4 className="text-2xl font-bold text-white mb-3">
+                  {paper.title}
+                </h4>
+                <p className="text-white/80 mb-4 leading-relaxed">
+                  {paper.abstract}
+                </p>
                 <div className="flex gap-4">
                   {paper.link && (
                     <Link
@@ -138,7 +150,9 @@ const WritingResearch = () => {
                 className="border border-white/20 rounded-lg p-6 hover:border-tertiaryColor transition-colors opacity-60"
               >
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="text-xl font-bold text-white">{project.title}</h4>
+                  <h4 className="text-xl font-bold text-white">
+                    {project.title}
+                  </h4>
                   <span className="text-xs text-tertiaryColor bg-tertiaryColor/20 px-2 py-1 rounded">
                     {project.status}
                   </span>
@@ -154,4 +168,3 @@ const WritingResearch = () => {
 };
 
 export default WritingResearch;
-
