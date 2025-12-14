@@ -11,11 +11,12 @@ const tabData = [
     content: (
       <div className="text-base lg:text-lg text-white/80 leading-relaxed">
         <p>
-          I&apos;m an IB Diploma student at Neev Academy with a passion for learning, 
-          research, and making education accessible. Through my work as an author, 
-          content creator, and founder of StudySphere, I strive to simplify complex 
-          concepts and help students succeed. My journey combines academic rigor with 
-          creative expression, always driven by curiosity and a desire to make an impact.
+          I&apos;m an IB Diploma student at Neev Academy with a passion for
+          learning, research, and making education accessible. Through my work
+          as an author, content creator, and founder of StudySphere, I strive to
+          simplify complex concepts and help students succeed. My journey
+          combines academic rigor with creative expression, always driven by
+          curiosity and a desire to make an impact.
         </p>
       </div>
     )
@@ -74,7 +75,7 @@ const tabData = [
       <div className="space-y-4">
         <div className="border border-white/20 rounded-lg p-4">
           <h3 className="text-lg font-semibold text-white mb-2">Author</h3>
-          <p className="text-white/80">Helping Hands, Loving Hearts</p>
+          <p className="text-white/80">Happy Hearts</p>
         </div>
         <div className="border border-white/20 rounded-lg p-4">
           <h3 className="text-lg font-semibold text-white mb-2">Founder</h3>
@@ -95,7 +96,7 @@ const timelineData = [
   {
     year: "2024",
     title: "Published Author",
-    description: "Helping Hands, Loving Hearts"
+    description: "Happy Hearts"
   },
   {
     year: "2023",
@@ -126,7 +127,7 @@ const About = () => {
         <h2 className="text-4xl md:text-5xl font-bold accentColor mb-6 md:mb-8">
           - about me
         </h2>
-        
+
         <div className="flex flex-row justify-start flex-wrap gap-2 mb-8">
           <TabButton
             selectTab={() => handleTabChange("who")}
@@ -179,8 +180,12 @@ const About = () => {
                 <div key={index} className="relative pl-12">
                   <div className="absolute left-2 top-1 w-4 h-4 rounded-full bg-tertiaryColor border-4 border-black"></div>
                   <div className="border border-white/20 rounded-lg p-6 hover:border-tertiaryColor transition-colors">
-                    <span className="text-tertiaryColor font-semibold text-sm">{item.year}</span>
-                    <h4 className="text-xl font-bold text-white mt-2 mb-1">{item.title}</h4>
+                    <span className="text-tertiaryColor font-semibold text-sm">
+                      {item.year}
+                    </span>
+                    <h4 className="text-xl font-bold text-white mt-2 mb-1">
+                      {item.title}
+                    </h4>
                     <p className="text-white/80">{item.description}</p>
                   </div>
                 </div>

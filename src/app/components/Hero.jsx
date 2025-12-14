@@ -20,10 +20,11 @@ const Hero = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-4 lg:text-xl poppins-medium">
             Student | Researcher | Creator
           </p>
-          
+
           {/* Short About Me Summary */}
           <p className="text-white text-sm sm:text-base mb-6 lg:text-lg max-w-2xl mx-auto">
-            IB Diploma student passionate about learning, research, and creating content that makes complex concepts accessible.
+            IB Diploma student passionate about learning, research, and creating
+            content that makes complex concepts accessible.
           </p>
 
           {/* Quick Highlights */}
@@ -32,7 +33,7 @@ const Hero = () => {
               IB Diploma Student
             </span>
             <span className="text-white border border-white/20 px-3 py-1.5 rounded-full">
-              Author of Helping Hands, Loving Hearts
+              Author of Happy Hearts
             </span>
             <span className="text-white border border-white/20 px-3 py-1.5 rounded-full">
               Founder of StudySphere
@@ -56,28 +57,36 @@ const Hero = () => {
               className="flex flex-col items-center p-4 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
             >
               <div className="text-3xl mb-1">📚</div>
-              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">Books</span>
+              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">
+                Books
+              </span>
             </Link>
             <Link
               href="#writing-research"
               className="flex flex-col items-center p-4 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
             >
               <div className="text-3xl mb-1">🔬</div>
-              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">Research</span>
+              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">
+                Research
+              </span>
             </Link>
             <Link
               href="#videos"
               className="flex flex-col items-center p-4 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
             >
               <div className="text-3xl mb-1">📺</div>
-              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">YouTube</span>
+              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">
+                YouTube
+              </span>
             </Link>
             <Link
               href="#blog"
               className="flex flex-col items-center p-4 border border-white/20 rounded-lg hover:border-tertiaryColor transition-colors group"
             >
               <div className="text-3xl mb-1">✍️</div>
-              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">Blog</span>
+              <span className="text-white text-sm group-hover:text-tertiaryColor transition-colors">
+                Blog
+              </span>
             </Link>
           </div>
         </motion.div>

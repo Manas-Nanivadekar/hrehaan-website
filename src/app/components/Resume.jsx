@@ -16,23 +16,30 @@ const Resume = () => {
           <h3 className="text-2xl font-bold text-white mb-4">Highlights</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
-              <h4 className="text-lg font-semibold text-white mb-2">Education</h4>
+              <h4 className="text-lg font-semibold text-white mb-2">
+                Education
+              </h4>
               <p className="text-white/80 text-sm">
-                IB Diploma Student<br />
+                IB Diploma Student
+                <br />
                 Neev Academy
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-white mb-2">Key Projects</h4>
+              <h4 className="text-lg font-semibold text-white mb-2">
+                Key Projects
+              </h4>
               <p className="text-white/80 text-sm">
-                Author: Helping Hands, Loving Hearts<br />
+                Author: Happy Hearts
+                <br />
                 Founder: StudySphere
               </p>
             </div>
             <div>
               <h4 className="text-lg font-semibold text-white mb-2">Skills</h4>
               <p className="text-white/80 text-sm">
-                Research • Content Creation<br />
+                Research • Content Creation
+                <br />
                 Data Analysis • Communication
               </p>
             </div>
@@ -77,4 +84,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
