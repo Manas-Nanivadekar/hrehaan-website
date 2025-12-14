@@ -17,11 +17,11 @@ const booksData = [
 
 const researchData = [
   {
-    title: "Research Paper Title",
+    title: "A Study On Entrepreneurship: Opportunities And Challenges",
     abstract:
-      "Brief abstract of your research paper. This section will contain the main findings and contributions of your work.",
-    link: "#", // Link to paper/PDF
-    pdfLink: "#" // Direct PDF link if available
+      "This research examines the entrepreneurial landscape in Karnataka and Maharashtra, analyzing 52 entrepreneurs. The work highlights that experienced, educated women are launching ventures driven by passion, purpose, and autonomy. Key obstacles identified include capital access, regulatory barriers, and financial planning deficiencies. The study emphasizes essential competencies in business management, communication, and strategic thinking, while underscoring the importance of mentorship and support systems for sustainable ventures aligned with SDGs 5, 8, and 9.",
+    link: "https://eprajournals.com/IJES/article/17192",
+    pdfLink: "https://eprajournals.com/IJES/article/17192/abstract"
   }
 ];
 
